@@ -2,7 +2,7 @@
 #Assignment 1: Debug.py
 #Fix any syntax errors you can spot and fulfill any other requests
 def main():
-    print(hello)
+    print(hellooo)
     print(3)
     print(10 + 10)
 
