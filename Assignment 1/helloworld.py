@@ -5,8 +5,11 @@
 
 
 def main():
-
-
+    print("Hello World!")
+    Favcolor = "purple"
+    print("My favorite color is:", Favcolor)
+    Birthday = "01 01 2005"
+    print("My birthday is:", Birthday)
 
     
     
