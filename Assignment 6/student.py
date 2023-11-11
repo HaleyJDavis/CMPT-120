@@ -25,14 +25,35 @@ create a function because this college is a wacky one- every day they generate a
 '''
 
 class student:
-    
-    
-    
-    
-    
+    def __init__(self, name, studID, year, major, gpa):
+        self.name = name
+        self.studID = studID
+        self.year = year
+        self.major = major
+        self.gpa = gpa
+
+    def honorsCheck(self):
+        if self.gpa >= 3.5:
+            return True
+            print("You qualify for honors")
+        else:
+            return False
+            print("You don't qualify for honors")
+
+    def idCheck(self):
+        import random
+        if self.studID == (random.randint(100000, 999999)):
+            print("Winner! Student (name) gets free lunch!")
+        else:
+            print("Loser!")
     
 def main():
     #create three students and check if they get free lunch and if they qualify for honors
-    
-    
+    studA = student("Lily", 341957, "Sophomore", "Business", 3.4)
+    studB = student("Hope", 502111, "Senior", "Art", 4.1)
+    studC = student("Theo", 903816, "Junior", "History", 3.9)
+    print(studA.honorsCheck(), studA.idCheck())
+    print(studB.honorsCheck(), studB.idCheck())
+    print(studC.honorsCheck(), studC.idCheck())
+
 main()
